@@ -14,6 +14,18 @@ export const rosterBook = () => {
     return registerBook;
 }
 
+export const searchLanguageBr = () => {
+    return registerBook.filter(({language}) => language == "Português");
+}
+
+export const searchLanguageIn = () => {
+    return registerBook.filter(({language}) => language == "Inglês");
+}
+
+export const searchNumberPages = () => {
+    return registerBook.filter(({number_of_pages}) => number_of_pages > 200);
+}
+
 
 export const updateBook = (id, name, author, publishing_company, description, number_of_pages, language) => {
     const bookAlreadyExist = registerBook.find(book => book.id == id);

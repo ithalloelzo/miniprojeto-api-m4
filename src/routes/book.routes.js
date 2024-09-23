@@ -1,5 +1,5 @@
 import { Router } from "express"
-import {createBook, rosterBook, updateBook, deleteBook} from '../controllers/book.controller.js'
+import {createBook, rosterBook, updateBook, deleteBook, searchLanguageBr, searchLanguageIn, searchNumberPages} from '../controllers/book.controller.js'
 
 const bookRouter = Router();
 
@@ -19,6 +19,21 @@ bookRouter.patch("/book/:id", (req,res) => {
 bookRouter.get("/book", (req,res) => {
     const lsBook = rosterBook();
     res.status(200).json({lsBook});
+});
+
+bookRouter.get("/book/language/br", (req,res) => {
+    const lsLanguageBrBook = searchLanguageBr();
+    res.status(200).json({lsLanguageBrBook});
+});
+
+bookRouter.get("/book/language/in", (req,res) => {
+    const lsLanguageInBook = searchLanguageIn();
+    res.status(200).json({lsLanguageInBook});
+});
+
+bookRouter.get("/book/pages", (req,res) => {
+    const lsPagesBook = searchNumberPages();
+    res.status(200).json({lsPagesBook});
 });
 
 bookRouter.delete("/book/:id", (req,res) => {
