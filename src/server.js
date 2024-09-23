@@ -11,4 +11,3 @@ app.use(bookRouter);
 app.listen(PORT, ()=> {
     console.log(`Servidor rodando no http://localhost:${PORT}`)
 })
-
