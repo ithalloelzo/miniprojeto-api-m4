@@ -34,11 +34,11 @@ export const updateBook = (id, name, author, publishing_company, description, nu
         let indexBook = registerBook.findIndex(book => book.id == id);
         registerBook[indexBook].name = name;
         registerBook[indexBook].author = author;
-        registerBook[indexBook].name = publishing_company;
-        registerBook[indexBook].name = description;
-        registerBook[indexBook].name = number_of_pages;
-        registerBook[indexBook].name = language;
-        
+        registerBook[indexBook].publishing_company = publishing_company;
+        registerBook[indexBook].description = description;
+        registerBook[indexBook].number_of_pages = number_of_pages;
+        registerBook[indexBook].language = language;
+
         return registerBook[indexBook];
     }else{
         return "Nao existe livro com este id"

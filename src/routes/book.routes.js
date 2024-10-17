@@ -10,9 +10,9 @@ bookRouter.post("/book", (req,res) => {
 });
 
 bookRouter.patch("/book/:id", (req,res) => {
-    let searchId = req.params
+    const {id} = req.params;
     const {name, author, publishing_company, description, number_of_pages, language} = req.body;
-    const upBook = updateBook(searchId.id, name, author, publishing_company, description, number_of_pages, language);
+    const upBook = updateBook(id, name, author, publishing_company, description, number_of_pages, language);
     res.status(200).json({upBook});
 })
 

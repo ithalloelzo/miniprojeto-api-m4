@@ -1,6 +1,6 @@
 export const registerBook = [
     {
-        "id": "1",
+        "id": 1,
         "name": "Pai Rico, Pai Pobre",
         "author": "Robery T. Kiyosaki",
         "publishing_company": "Alta Books",
@@ -10,7 +10,7 @@ export const registerBook = [
     },
 
     {
-        "id": "2",
+        "id": 2,
         "name": "Deixe de Ser Pobre!",
         "author": "Eduardo Feldeberg",
         "publishing_company": "mqnr",
@@ -20,7 +20,7 @@ export const registerBook = [
     },
 
     {
-        "id": "3",
+        "id": 3,
         "name": "Os Segredos da Mente Milionária",
         "author": "T. Harv Eker",
         "publishing_company": "Sextante",
@@ -30,18 +30,18 @@ export const registerBook = [
     },
 
     {
-        "id": "4",
+        "id": 4,
         "name": "Mais esperto que o Diabo",
         "author": "Napoleon Hill",
         "publishing_company": "Citadel",
         "description": "O mistério revelado da liberdade e do sucesso",
         "number_of_pages": 208,
-        "language": 'Inglês'  
+        "language": "Inglês"  
 
     },
 
     {
-        "id": "5",
+        "id": 5,
         "name": "O Milagre da Amanhã",
         "author": "Hal Erold",
         "publishing_company": "Grupo Editorial Record",
@@ -51,7 +51,7 @@ export const registerBook = [
     },
 
     {
-        "id": "6",
+        "id": 6,
         "name": "O Homem Mais Rico da Babilônia",
         "author": "George S. Clason",
         "publishing_company": "HarperCollins",
